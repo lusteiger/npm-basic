@@ -1,10 +1,11 @@
-import _ from 'romanize';
+import romanize from 'romanize';
 
-const transformer = (Number) =>{
-          return "X";
-};
+const transform = (Number) => {
+          var romanize = require('romanize')
+          return romanize(Number);
+}
 
 export {
-          transformer
-      };
+          transform
+};
 
